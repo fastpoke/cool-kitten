@@ -1,7 +1,11 @@
 jQuery(document).ready(function ($) {
 
 
-    $(window).stellar();
+    $(window).stellar({
+        horizontalScrolling: false,
+        verticalOffset: 0,
+        horizontalOffset: 0
+    });
 
     var links = $('.navigation').find('li');
     slide = $('.slide');
